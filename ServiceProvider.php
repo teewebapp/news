@@ -16,10 +16,10 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider {
             __NAMESPACE__.'\\Widgets\\NewsBoxList'
         );
 
-        Event::listen('admin::loadMenu', function($menu) {
+        Event::listen('admin::menu.load', function($menu) {
             $format = '<img src="%s" class="fa" />&nbsp;&nbsp;<span>%s</span>';
             $menu->add(
-                sprintf($format, moduleAsset('news', 'images/icon_news.png'), 'Portfólio'),
+                sprintf($format, moduleAsset('news', 'images/icon_news.png'), 'Notícias'),
                 route('admin.news.index')
             );
         });

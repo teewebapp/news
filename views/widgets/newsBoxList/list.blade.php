@@ -1,9 +1,12 @@
 @foreach($pages as $page)
     <div class="{{ $options['itemBoxClass'] }}">
-        <a class="{{ $options['itemClass'] }}" href="{{$page->url}}">
+        <a href="{{$page->url}}">
             <img src="{{{ $page->imageUrl }}}" alt="" class="portifolio">
-            <div class="portifolio-description">
+            <div class="{{ $options['titleClass'] }}">
                 {{{ $page->title }}}
+            </div>
+            <div class="{{ $options['descriptionClass'] }}">
+                {{{ $page->description }}}
             </div>
         </a>
     </div>

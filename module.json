@@ -1,0 +1,6 @@
+{
+    "enabled": true,
+    "seeder": "Tee\\News\\Seeds\\DatabaseSeeder",
+    "provider": "Tee\\News\\ServiceProvider",
+    "order": 20
+}

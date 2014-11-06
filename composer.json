@@ -1,0 +1,16 @@
+{
+	"name": "teewebapp/news",
+	"description": "News Module for TeeWebApp",
+	"keywords": ["teewebapp", "news"],
+	"license": "MIT",
+	"require": {
+		"teewebapp/system": "dev-master@dev",
+		"teewebapp/page": "dev-master@dev"
+	},
+	"autoload": {
+        "psr-4": {
+            "Tee\\News\\": "."
+        }
+	},
+	"minimum-stability": "stable"
+}
